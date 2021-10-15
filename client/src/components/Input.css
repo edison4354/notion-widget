@@ -1,0 +1,35 @@
+.labelColor {
+  display: block;
+  font-size: 0.6em;
+  font-weight: 500;
+}
+
+.inputComponent {
+  margin-left: 20px;
+  text-align: left;
+}
+
+.inputSave {
+  margin-left: 0px;
+  width: 95%;
+  margin-top: 25px;
+}
+
+p {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #9E9E9E;
+}
+
+hr {
+  color: #cdcdcd;
+  height: 1px;
+  background-color: #cdcdcd;
+  margin-right: 20px;
+  border: none;
+}
+
+label {
+  margin-top: 20px;
+}
