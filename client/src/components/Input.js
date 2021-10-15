@@ -45,6 +45,10 @@ class Input extends Component {
         <label class="labelColor">Choose the main element color:</label>
         <input type="text" name="colorOne" onChange={this.handleChange} value={colorOne} />
         <button class="inputSave" onClick={this.addTodo}>Save</button>
+        <div class="linkContainer">
+          <p>COPY LINK (THEN PASTE INTO NOTION, AND CLICK "EMBED")</p>
+          <input class="embedLink" value="https://catkin-numerous-slug.glitch.me"/>
+        </div>
       </div>
     );
   }
