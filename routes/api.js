@@ -4,13 +4,13 @@ const Todo = require('../models/todo');
 
 router.get('/todos', (req, res, next) => {
   // This will return all the data, exposing only the id and action field to the client
-  Todo.find({}, 'action')
+  Todo.find({}, 'color')
     .then((data) => res.json(data))
     .catch(next);
 });
 
 router.post('/todos', (req, res, next) => {
-  if (req.body.action) {
+  if (req.body.color && req.body.colorOne) {
     Todo.create(req.body)
       .then((data) => res.json(data))
       .catch(next);

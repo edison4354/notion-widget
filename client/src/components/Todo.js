@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Input from './Input';
-import ListTodo from './ListTodo';
 
 class Todo extends Component {
   state = {
@@ -25,25 +24,12 @@ class Todo extends Component {
       .catch((err) => console.log(err));
   };
 
-  deleteTodo = (id) => {
-    axios
-      .delete(`/api/todos/${id}`)
-      .then((res) => {
-        if (res.data) {
-          this.getTodos();
-        }
-      })
-      .catch((err) => console.log(err));
-  };
 
   render() {
-    let { todos } = this.state;
-
     return (
       <div class='widgetConfigPage'>
-        <h1>My Todo(s)</h1>
+        <h2>Notion Widget</h2>
         <Input getTodos={this.getTodos} />
-        <ListTodo todos={todos} deleteTodo={this.deleteTodo} />
       </div>
     );
   }
