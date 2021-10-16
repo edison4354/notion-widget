@@ -7,13 +7,13 @@
 }
 
 input {
-  height: 40px;
-  width: 50%;
+  width: 70%;
   border: none;
   border-bottom: 2px #101113 solid;
   background: none;
-  font-size: 1.5rem;
-  color: #787a80;
+  font-size: 1.2rem;
+  color: #727272;
+  margin-top: 0px;
 }
 
 input:focus {
@@ -28,7 +28,7 @@ button {
   font-size: 25px;
   background: #101113;
   border-radius: 5px;
-  color: #787a80;
+  color: #cdcdcd;
   cursor: pointer;
 }
 

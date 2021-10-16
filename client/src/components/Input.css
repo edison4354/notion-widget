@@ -20,6 +20,7 @@ p {
   font-size: 0.78rem;
   font-weight: bold;
   color: #9E9E9E;
+
 }
 
 hr {
@@ -38,7 +39,8 @@ label {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  padding-block: 5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   border: none;
   color: #4f4f4f;
   background-color: #ebebeb;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import './Input.css'
+import './Input.css';
 
 class Input extends Component {
   state = {
@@ -40,9 +40,9 @@ class Input extends Component {
       <div class="inputComponent">
         <hr/>
         <p>STYLE</p>
-        <label class="labelColor" for="bgColor">Choose the background color:</label>
+        <label class="labelColor" for="bgColor">Choose the background color: <p>(hex code)</p></label>
         <input type="text" name="color" onChange={this.handleChange} value={color} />
-        <label class="labelColor">Choose the main element color:</label>
+        <label class="labelColor">Choose the main element color:<p>(hex code)</p></label>
         <input type="text" name="colorOne" onChange={this.handleChange} value={colorOne} />
         <button class="inputSave" onClick={this.addTodo}>Save</button>
         <div class="linkContainer">
